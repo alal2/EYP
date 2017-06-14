@@ -1,0 +1,62 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script type="text/javascript" src= "AJAXHands-on.js"></script>
+    <style type="text/css">
+        form{
+            position: relative;
+        }
+        #userInput{
+            position: absolute;
+            z-index: 11;
+            background: transparent
+        }
+        #autocomplete{
+            position: absolute;
+            left:72px;
+            z-index: 10;
+            background: transparent;
+            color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <div class="page-header">
+             <h1> AJAX</h1>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class = "container-fluid">
+                <div class = ="navbar-header">
+                    <button type= "button" class="navbar-toggle collapsed" data-toggle="collapse" data-target = "#modulesNavBar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Modules</a>
+                </div>
+
+                <div class ="collapse navbar-collapse" id ="modulesNavBar">
+                    <ul class="nav navbar-nav">
+                        <li class="active" id="ajaxModule"><a href="">Module 1</a><span class="sr-only">(current)</span></li>
+                        <li><a href="" id="ajaxModule">Module 2</a></li>
+                        <li><a href="">Module 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+            <p><b>Start typing a name in the input field below:</b></p>
+            <form>
+            First name: <input type="text"  id="userInput" onkeydown ="showHint(this.value, callback)">
+            <input type="text" id="autocomplete" disabled="true">
+            </form>
+            <p>Suggestions: 
+            <span id="txtHint">
+                <ul id ="hintUL"></ul>
+            </span></p>
+    </div>
+       
+
+</body>
+</html>
