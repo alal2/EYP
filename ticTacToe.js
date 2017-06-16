@@ -18,7 +18,6 @@ $(document).ready(function(){
 	rightElem3;
 
 	function callback(value){
-		console.log('callback;')
 		if(value == 'X'){
 			$('#turnInfo').html('Player 1 is winner');
 		}else if(value === 'O'){
