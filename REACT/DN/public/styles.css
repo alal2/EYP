@@ -1,0 +1,44 @@
+.navbar{
+	padding:20px;
+	margin:10px;
+	color:white;
+	cursor:pointer;
+}
+.stories{
+	height:auto;
+	border:1px solid black;
+}
+ ul{
+	list-style-type: none;
+	box-sizing: border-box;
+
+}
+ ul li{
+	display:inline-block;
+	box-sizing: border-box;
+	padding:5px;
+	margin:0;
+}
+.story{
+	width:500px;
+}
+span{
+	display: block;
+}
+button{
+	background: none;
+	border:none;
+}
+.glyphicon:before {
+ visibility: visible;
+}
+.glyphicon.glyphicon-star-empty:checked:before {
+   content: "\e006";
+}
+input[type=checkbox].glyphicon{
+    visibility: hidden;
+    
+}
+/*.navbar ul li{
+	display: inline-block;
+}*/
